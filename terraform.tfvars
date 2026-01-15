@@ -1,22 +1,22 @@
 ## DEPLOY ONLY API MANAGEMENT SERVICE
 
 // COMMON VARIABLES
-rsg_name = "sgtd2weursgitdmodcomm001"
-location = "westeurope"
-subscription_id = "ebac6c00-3c2f-4d56-82c0-8057225d44fa"
+rsg_name = "rg-poc-test-001"
+location = "chilecentral"
+subscription_id = "ef0a94be-5750-4ef8-944b-1bbc0cdda800"
 
 // KEY VAULT
-akv_name = "sgtd2weuakvitdmodcomm002"
+akv_name = "akvchilecentralakvdev001"
 
 // PRODUCT
 ams_name        = "sgtd2weuamsitdmodcomm001-devbgt050824"
 publisher_email = "x360392@santanderglobaltech.com"
 publisher_name  = "Blanca"
 # sku             = "Developer" #"Developer", "Basic", "Standard", "Premium", "Consumption"
-sku = "Premium" #"Developer", "Basic", "Standard", "Premium", "Consumption"
-# sku_count_basic                 = 2
+sku = Basic #"Premium," "Developer", "Basic", "Standard", "Premium", "Consumption"
+sku_count_basic                 = 2
 # sku_count_standard              = 4
-sku_count_premium    = 3
+#sku_count_premium    = 3
 zones                = ["1"] #["1", "2", "3"] #["1", "2"] 
 subnet_id            = "/subscriptions/ebac6c00-3c2f-4d56-82c0-8057225d44fa/resourceGroups/sgtd2weursgitdmodcomm001/providers/Microsoft.Network/virtualNetworks/vnetprereq/subnets/lbtest"
 virtual_network_type = "Internal" # "None", "Internal", "External"
