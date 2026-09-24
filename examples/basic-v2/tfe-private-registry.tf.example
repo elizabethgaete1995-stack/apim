@@ -1,0 +1,23 @@
+module "apim" {
+  source  = "app.terraform.io/MI_ORGANIZACION/apim/azurerm"
+  version = "1.0.0"
+
+  name                = "apim-callejero-prd-eastus-01"
+  resource_group_name = "rg-callejero-prd-eastus-01"
+  location            = "eastus2"
+
+  publisher_name  = "Metrogas S.A."
+  publisher_email = "jariquelme@metrogas.cl"
+
+  sku = {
+    name     = "BasicV2"
+    capacity = 1
+  }
+
+  business_tags = {
+    business_unit = "Management"
+    workgroup     = "Sistemas"
+    cost_center   = "IT"
+    environment   = "DEV"
+  }
+}
