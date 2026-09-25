@@ -44,7 +44,7 @@ subnet_name = "snet-api-management-dmz"
 # Azure requiere minimo /27 y recomienda /24 para permitir escalamiento.
 # EJEMPLO. CAMBIAR JUNTO CON vnet_address_space si corresponde.
 subnet_address_prefixes = [
-  "10.250.0.0/24"
+  "10.150.3.64/27"
 ]
 
 nsg_name = "nsg-api-management-prd-eastus2-01"
